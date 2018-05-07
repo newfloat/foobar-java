@@ -1,0 +1,60 @@
+{
+"projectInfo": {
+	"name": "foobar-java",
+	"versionStrategy": "tracker",
+	"language": "java"
+},
+
+"artifact": {
+	"artifactoryDomain": "http://ec2-52-41-118-133.us-west-2.compute.amazonaws.com:7081/artifactory",
+	"artifactoryRepoKey": "libs-release-local",
+	"artifactoryRepoKeySnapshot": "libs-snapshot-local",
+	"artifactoryGroup": "com/hub",
+	"artifactType": "jar"
+},
+
+"artifactoryConfig": {
+	"artifactoryDomain": "http://ec2-52-41-118-133.us-west-2.compute.amazonaws.com:7081/artifactory",
+	"artifactoryRepoKey": "libs-release-local",
+	"artifactoryRepoKeySnapshot": "libs-snapshot-local",
+	"artifactoryGroup": "com/hub",
+	"artifactType": "jar"
+},
+
+"github": {
+	"org": "newfloat",
+	"repo": "foobar-java",
+	"URL": "https://github.homedepot.com/api/v3/repos"
+},
+
+"tracker": {
+	"projectId": 2166414
+},
+
+"slack": {
+	"channel": "#test-feeds",
+	"botName": "DeployBot",
+	"emoji": ":robot_face:"
+},
+
+"environments": {
+    "development": {
+      "cf": {
+        "apiEndpoint": "api.run.pivotal.io",
+        "space": "development",
+        "org": "dev-nonprod-org"
+      },
+      "artifactCategory": "snapshot",
+      "associatedBranchName": "master"
+    },
+    "production": {
+      "cf": {
+        "apiEndpoint": "api.run.pivotal.io",
+        "org": "dev-nonprod-org",
+        "space": "stage"
+      },
+      "artifactCategory": "release",
+      "associatedBranchName": "master"
+    }
+  }
+}

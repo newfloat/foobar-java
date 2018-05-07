@@ -1,0 +1,65 @@
+{
+  "type": "Major",
+  "assigned_to": "AXS3159",
+  "u_elevated_permissions_user_id": "",
+  "category": "Application",
+  "cmdb_ci": "Homedepot.com",
+  "comments": "Generated using Concourse Flow",
+  "description": "Deployment Change\no SRE team will be deploying to Beta & Live Prod environment\no a. What is the required change?\no Deploy the latest  changes to Beta & Live Production.",
+  "detailed_backout_plan": {
+    "description": "Detailed Backout Plan",
+    "steps": [
+      {
+        "u_description": "If your change should exceed your downtime window, you must have a back-out plan. Please include any details below.",
+        "u_assigned_to": "VXK1803",
+        "u_duration": "0 02:00:00"
+      }
+    ]
+  },
+  "detailed_implementation_plan": {
+    "description": "Detailed Implementation Plan",
+    "steps": [
+      {
+        "u_description": "Use pipeline to build, test, and prepare artifact",
+        "u_assigned_to": "VXK1803",
+        "u_duration": "0 03:00:00"
+      }
+    ]
+  },
+  "justification": "collection cloud app will be deployed to Beta & Live Production with the latest changes.",
+  "post_implementation_verification_plan": {
+    "description": "Post Implementation Verification Plan",
+    "steps": [
+      {
+        "u_description": "Please include both a technical verification and a functional verification if applicable.",
+        "u_assigned_to": "VXK1803",
+        "u_duration": "0 03:00:00"
+      }
+    ]
+  },
+  "u_test_perf": "Yes",
+  "u_tests_failed": false,
+  "requested_by": "AXS3159",
+  "short_description": "Deployment Change: Beta & Live Prod deployment for collection app.",
+  "u_assigned_director": "WBR5FT",
+  "u_assigned_manager": "HZI7OE0",
+  "u_assigned_vp": "NXK4162",
+  "u_automation": "Manual",
+  "u_automation_pkg_no": "",
+  "u_classification": "Standalone",
+  "u_deployment_environment": "Data Center",
+  "u_chg_env": "Production",
+  "u_downtime_duration_and_impact": "",
+  "u_downtime_required_": "No",
+  "u_fms_number": "IT-08391",
+  "u_subexperience": "Collections",
+  "u_test_res": "http://sqhub.homedepot.com/pipeLineView?applicationName=Collections&startdate=2018-03-29&enddate=2018-04-04",
+  "u_production_impact": "Normal",
+  "u_size": "Normal",
+  "u_validated_by": "Rajesh Gopal",
+  "u_work_characterization": "Normal Deployment",
+  "u_itil_watch_list": "jatin_jogi@homedepot.com",
+  "work_notes": "",
+  "start_date": "2018-04-25 09:00:00",
+  "end_date": "2018-04-25 17:00:00"
+}
