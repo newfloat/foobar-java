@@ -7,11 +7,11 @@ image_resource:
     tag: latest
 
 inputs:
-# - name: release-branch
-- name: code-repo
+- name: release-branch
+# - name: code-repo
 
 run:
-  # path: sh
-  # args: ['./release-branch/ci/scripts/version.sh']
-  dir: code-repo
-  path: ./scripts/github_version.sh
+  path: sh
+  args: ['./release-branch/ci/scripts/github_version.sh']
+  # dir: code-repo
+  # path: ./scripts/github_version.sh
